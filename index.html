@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body class="">
+    <header class="header">
+        <div class="container">
+
+            <div class="header__content">
+                <a class="header__logo" href="#">Мой проект</a>
+                <button class="header__cart" type="button">В корзину</button>
+                <div class="header__menu">
+                    <span class="header__menu-dots"></span>
+                    <span class="header__menu-dots"></span>
+                    <span class="header__menu-dots"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="container">
+                <div class="gallery__slider">
+                    <div class="gallery__slider-wrapper">
+                        <div class="gallery__slider-slide">
+                            <img class="gallery__image" alt="image" src="./images/minecraft-1.png">
+                        </div>
+                        <div class="gallery__slider-slide">
+                            <img class="gallery__image" alt="image" src="./images//minecraft-2.jpeg">
+                        </div>
+                        <div class="gallery__slider-slide">
+                            <img class="gallery__image" alt="image" src="./images/minecraft-3.jpg">
+                        </div>
+                        <div class="gallery__slider-slide">
+                            <img class="gallery__image" alt="image" src="./images/minecraft-4.jpg">
+                        </div>
+                    </div>
+                    <div class="gallery__slider-controls">
+                        <div class="gallery__slider-button gallery__slider-button_prev"></div>
+                        <div class="gallery__slider-pagination">
+                            <span class="text">Страница</span>
+                            <span class="number">1</span>
+                        </div>
+                        <div class="gallery__slider-button gallery__slider-button_next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-panel">
+            <div class="tab-panel__header">
+                <button class="tab-panel__button tab-panel__button_active" data-tab-content="gallery">Галерея</button>
+                <button class="tab-panel__button" data-tab-content="template">Шаблоны</button>
+                <button class="tab-panel__button" data-tab-content="background">Фон</button>
+            </div>
+            <div class="tab-panel__body">
+                <div class="container">
+                    <div class="tab-panel__content tab-panel__content_active tab-panel__content_gallery">
+                        <div class="tab-panel__content-header">
+                            <button class="tab-panel__content-button tab-panel__content-button_delete" type="button">Очистить</button>
+                            <button class="tab-panel__content-button tab-panel__content-button_select" type="button">Выбрать</button>
+                        </div>
+                        <div class="tab-panel__content-body">
+                            <div class="tab-panel__button-wrapper">
+                                <input class="tab-panel__input" name="image" type="file" accept=".jpg, .png, .jpeg, .gif">
+                                <div class="tab-panel__input-button">Добавить фотографию</div>
+                            </div>
+                            <img class="tab-panel__image" src="./images//minecraft-5.jpg" alt="tab image">
+                            <img class="tab-panel__image" src="./images//minecraft-6.jpg" alt="tab image">
+                        </div>
+                    </div>
+                    <div class="tab-panel__content tab-panel__content_template">
+                        Шаблоны
+                    </div>
+                    <div class="tab-panel__content tab-panel__content_background">
+                        Фон
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup__container">
+                <div class="popup__content">
+                    <span class="popup__close"></span>
+                    <p>Товар добавлен в корзину!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
